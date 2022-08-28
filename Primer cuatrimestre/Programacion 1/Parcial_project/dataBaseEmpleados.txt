@@ -1,0 +1,1 @@
+1,Ybañez,Lucas,43433596,20/6/2022,Belgrano 1 Dpto:  Piso: -2,Aguero,Federico,42000000,20/6/2022,San Martín 1 Dpto:  Piso: -3,Messi,Lionel,10000000,20/6/2022,Traeame la copa 22 Dpto:  Piso: -4,Tocasno,Rodrigo,42000000,20/6/2022,Belgrano  2 Dpto:  Piso: -5,Ybañez,Lucía,43433596,20/6/2022,San Martín 1 Dpto:  Piso: -

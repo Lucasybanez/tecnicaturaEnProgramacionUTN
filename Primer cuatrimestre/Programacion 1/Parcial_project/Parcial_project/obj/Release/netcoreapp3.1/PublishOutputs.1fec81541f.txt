@@ -1,0 +1,6 @@
+C:\Users\Lucas21\Desktop\Programación\codigos\c#\Parcial_project.exe
+C:\Users\Lucas21\Desktop\Programación\codigos\c#\Parcial_project.dll
+C:\Users\Lucas21\Desktop\Programación\codigos\c#\Parcial_project.deps.json
+C:\Users\Lucas21\Desktop\Programación\codigos\c#\Parcial_project.runtimeconfig.json
+C:\Users\Lucas21\Desktop\Programación\codigos\c#\Parcial_project.pdb
+C:\Users\Lucas21\Desktop\Programación\codigos\c#\FontAwesome.Sharp.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hyY0NwzMn5pVaHhkJKEKXcX1oXUXMQ/CVSxEqKGSSp79ge3RPdXhTePWaEv/GYx4ySaBrJtPvhW91EHDj5D61A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lucas21\\Desktop\\Programación\\codigos\\c#\\Parcial_project\\Parcial_project\\Parcial_project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lucas21\\.nuget\\packages\\fontawesome.sharp\\5.15.4\\fontawesome.sharp.5.15.4.nupkg.sha512"
+  ],
+  "logs": []
+}
