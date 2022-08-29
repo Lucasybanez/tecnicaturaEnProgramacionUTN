@@ -35,12 +35,15 @@ namespace Trabajo_n1
                         break;
 
                     case 5:
+                        puntoCinco();
                         break;
 
                     case 6:
+                        puntoSeis();
                         break;
 
                     case 7:
+                        puntoSiete();
                         break;
 
                     case 8:
@@ -171,17 +174,124 @@ namespace Trabajo_n1
 
         static void puntoCinco()
         {
+            int total = 0, correctas=0, porcentaje=0;
 
+            Console.Clear();
+            Console.WriteLine("-----Ejecutando el punto numero 5-----");
+            Console.WriteLine(""); Console.WriteLine("");
+
+
+            Console.Write("Ingrese la cantidad de preguntas: ");
+            total = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese la cantidad de preguntas respondidas correctamente: ");
+            correctas = Int32.Parse(Console.ReadLine());
+
+            porcentaje = (correctas * 100) / total;
+
+            if (porcentaje>50)
+            {
+                if (porcentaje <= 75)
+                {
+                    Console.WriteLine("Nivel regular: " + porcentaje + "%");
+                }
+
+                else if (porcentaje>75 && porcentaje<90)
+                {
+                    Console.WriteLine("Nivel medio: " + porcentaje + "%");
+                }
+
+                else
+                {
+                    Console.WriteLine("Nivel máximo: " + porcentaje + "%");
+                }
+            }
+
+            else
+            {
+                Console.WriteLine("Menos de 50% " + porcentaje);
+            }
+
+            Console.WriteLine(""); Console.WriteLine("");
+            Console.WriteLine("-----El punto a terminado su ejecución-----");
         }
 
         static void puntoSeis()
         {
+            int sueldo = 0, antiguedad = 0;
 
+            Console.Clear();
+            Console.WriteLine("-----Ejecutando el punto numero 6-----");
+            Console.WriteLine(""); Console.WriteLine("");
+
+
+            Console.Write("Ingrese el sueldo del empleado: $");
+            sueldo = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese la antiguedad del empleado: ");
+            antiguedad = Int32.Parse(Console.ReadLine());
+
+            if (sueldo<500 && antiguedad>10)
+            {
+                Console.WriteLine("Se le otorgará un aumento del 20%, el nuevo sueldo es: $" + sueldo*1.20);
+            }
+
+            else
+            {
+                Console.WriteLine("Sueldo sin cambios $"+sueldo);
+            }
+
+            Console.WriteLine(""); Console.WriteLine("");
+            Console.WriteLine("-----El punto a terminado su ejecución-----");
         }
 
         static void puntoSiete()
         {
+            int sueldo=1, sueldosMenores = 0, sueldosMayores=0, gasto=0, empleados=1;
 
+            Console.Clear();
+            Console.WriteLine("-----Ejecutando el punto numero 7-----");
+            Console.WriteLine(""); Console.WriteLine("");
+
+            Console.WriteLine("Para terminar el ingreso de empleados ingrese 0");
+
+            while (sueldo != 0)
+            {
+                Console.WriteLine("");
+                Console.Write("Ingrese el sueldo del empleado numero "+ empleados +": $");
+                sueldo = Int32.Parse(Console.ReadLine());
+
+                if (sueldo >= 100 & sueldo<=300)
+                {
+                    empleados++;
+                    sueldosMenores++;
+                    gasto = gasto + sueldo;
+                }
+
+                else if (sueldo>300 && sueldo<=500)
+                {
+                    empleados++;
+                    sueldosMayores++;
+                    gasto = gasto + sueldo;
+                }
+
+                else if (sueldo == 0){}
+
+                else
+                {
+                    Console.WriteLine("Valor ingresado no válido");
+                }
+
+                
+            }
+            Console.Clear();
+            Console.WriteLine("El numero total de empleados ingresados es " + (empleados-1));
+            Console.WriteLine("El numero total de empleados con sueldos menores es " + sueldosMenores);
+            Console.WriteLine("El numero total de empleados con sueldos mayores es " + sueldosMayores);
+            Console.WriteLine("El gasto total generado por la empresa es $" + gasto);
+
+            Console.WriteLine(""); Console.WriteLine("");
+            Console.WriteLine("-----El punto a terminado su ejecución-----");
         }
 
         static void puntoOcho()
