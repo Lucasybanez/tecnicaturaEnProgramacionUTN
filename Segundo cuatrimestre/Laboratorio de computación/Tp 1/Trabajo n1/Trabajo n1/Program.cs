@@ -47,6 +47,7 @@ namespace Trabajo_n1
                         break;
 
                     case 8:
+                        puntoOcho();
                         break;
 
                     case 9:
@@ -296,17 +297,180 @@ namespace Trabajo_n1
 
         static void puntoOcho()
         {
+           
+            int edadTMañana;
+            int edadTTarde;
+            int edadTNoche;
+            int i;
+            double sumadorTMañana;
+            double sumadorTTarde;
+            double sumadorTNoche;
+            double promedioTMañana;
+            double promedioTTarde;
+            double promedioTNoche;
 
+            Console.Clear();
+            Console.WriteLine("-----Ejecutando el punto numero 8-----");
+            Console.WriteLine(""); Console.WriteLine("");
+
+            sumadorTMañana = 0;
+            for (i = 0; i < 50; i++)
+            {
+                Console.Write($"Ingresar la edad del alumno {i} de Turno Mañana: ");
+                edadTMañana = Convert.ToInt32(Console.ReadLine());
+                sumadorTMañana = sumadorTMañana + edadTMañana;
+            }
+            Console.WriteLine();
+            sumadorTTarde = 0;
+            for (i = 0; i < 60; i++)
+            {
+                Console.Write($"Ingresar la edad del alumno {i} de Turno Tarde: ");
+                edadTMañana = Convert.ToInt32(Console.ReadLine());
+                sumadorTTarde = sumadorTTarde + edadTMañana;
+            }
+            Console.WriteLine();
+            sumadorTNoche = 0;
+            for (i = 0; i < 110; i++)
+            {
+                Console.Write($"Ingresar la edad del alumno {i} de Turno Noche: ");
+                edadTMañana = Convert.ToInt32(Console.ReadLine());
+                sumadorTNoche = sumadorTNoche + edadTMañana;
+            }
+            Console.WriteLine();
+            promedioTMañana = sumadorTMañana / 50;
+            Console.WriteLine();
+            promedioTTarde = sumadorTTarde / 60;
+            Console.WriteLine();
+            promedioTNoche = sumadorTNoche / 110;
+            Console.WriteLine();
+            Console.Write($"Promedio de edad del turno mañana: {promedioTMañana}");
+            Console.Write($"Promedio de edad del turno tarde: {promedioTTarde}");
+            Console.Write($"Promedio de edad del turno noche: {promedioTNoche}");
+            Console.WriteLine();
+            if (promedioTMañana < promedioTTarde && promedioTMañana < promedioTNoche)
+            {
+                Console.WriteLine("El turno mañana tiene un promedio de edad menor");
+            }
+            if (promedioTTarde < promedioTMañana && promedioTTarde < promedioTNoche) ;
+            {
+                Console.WriteLine("El turno tarde tiene un promedio de edad menor");
+            }
+            if (promedioTNoche < promedioTMañana && promedioTNoche < promedioTTarde) ;
+            {
+                Console.WriteLine("El turno noche tiene un promedio de edad menor");
+            }
+
+            Console.WriteLine(""); Console.WriteLine("");
+            Console.WriteLine("-----El punto a terminado su ejecución-----");
         }
 
         static void puntoNueve()
         {
+            int x;
+            int numero;
+            double saldo;
+            double saldoAcreedores;
 
+
+            Console.Clear();
+            Console.WriteLine("-----Ejecutando el punto numero 9-----");
+            Console.WriteLine(""); Console.WriteLine("");
+
+            saldoAcreedores = 0;
+            x = 1;
+            do
+            {
+                Console.WriteLine();
+                Console.Write("Ingresar el número de la cuenta: ");
+                numero = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Ingresar el saldo de la cuenta: ");
+                saldo = Convert.ToDouble(Console.ReadLine());
+
+                if (numero >= 0)
+                {
+                    if (saldo > 0)
+                    {
+                        Console.WriteLine();
+                        Console.Write($"Número de la cuenta: {numero}");
+                        Console.WriteLine();
+                        Console.Write("Estado de la cuenta: Acreedor");
+                        saldoAcreedores = saldoAcreedores + saldo;
+                    }
+                    else
+                    {
+                        if (saldo < 0)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine($"Número de la cuenta: {numero}");
+                            Console.WriteLine("Estado de la cuenta: Deudor");
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine($"Número de la cuenta: {numero}");
+                            Console.WriteLine("Estado de la cuenta: Nulo");
+                        }
+                    }
+                    Console.WriteLine();
+                }
+                else { break; }
+            } while (x != 0);
+
+            Console.WriteLine(""); Console.WriteLine("");
+            Console.WriteLine("-----El punto a terminado su ejecución-----");
         }
 
         static void puntoDiez()
         {
+            Console.Clear();
+            Console.WriteLine("-----Ejecutando el punto numero 10-----");
+            Console.WriteLine(""); Console.WriteLine("");
 
+            int[] alumnoA;
+            int[] alumnoB;
+            double sumadorA;
+            double sumadorB;
+            double promedioA;
+            double promedioB;
+            int i;
+
+
+            Console.Clear(); //borrar pantalla
+            Console.WriteLine();
+
+            alumnoA = new int[5];
+            alumnoB = new int[5];
+            sumadorA = 0;
+
+            for (i = 0; i < alumnoA.Length; i++)
+            {
+                Console.Write($"Ingrese la nota del alumno {i} del curso A: ");
+                alumnoA[i] = Convert.ToInt32(Console.ReadLine());
+                sumadorA = sumadorA + alumnoA[i];
+            }
+            Console.WriteLine();
+            sumadorB = 0;
+            for (i = 0; i < alumnoA.Length; i++)
+            {
+                Console.Write($"Ingrese la nota del alumno {i} del curso B: ");
+                alumnoB[i] = Convert.ToInt32(Console.ReadLine());
+                sumadorB = sumadorB + alumnoB[i];
+            }
+            promedioA = sumadorA / 5;
+            promedioB = sumadorB / 5;
+            Console.WriteLine();
+
+            if (promedioA > promedioB)
+            {
+                Console.Write($"El curso A tuvo un mayor promedio general de: {promedioA}");
+            }
+            else
+            {
+                Console.Write($"El curso B tuvo un mayor promedio general de: {promedioB}");
+            }
+
+            Console.WriteLine(""); Console.WriteLine("");
+            Console.WriteLine("-----El punto a terminado su ejecución-----");
         }
 
     }
