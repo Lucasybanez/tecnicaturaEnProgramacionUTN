@@ -1,0 +1,24 @@
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.productos__c1{
+    margin: 1%;
+    text-align: center;
+    width: 15%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3%;
+}
+
+.productos__c1__img{
+    width: 50%;
+}
+
+.herramientas{
+    background-color: white;
+    border-radius: 15px;
+    padding: 1% 0;
+}

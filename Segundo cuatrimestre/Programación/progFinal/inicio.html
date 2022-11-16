@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/styleInicio.css">
+    <link rel="stylesheet" href="./css/styleNewProduct.css">
+    <link rel="stylesheet" href="./css/styleLogin.css">
+</head>
+<body>
+    <nav class="paraNav" >
+        <img src="./img/logardo.png" alt="" width="5%">
+        <h1>Tarancon gym</h1>
+    </nav>
+    <section > <!-- Productos -->
+        <div class="productos" id="contProductos">  <!--Contenedor -->
+            <!--<div class="productos__c1">
+                <img src="./img/prote.jpg" alt="" class="productos__c1__img">
+                <p>ID: 1</p>
+                <p>Proteina GigaChad</p>
+                <p>Sólo para gigachadas</p>
+                <p>$15.000</p>
+            </div> -->
+        </div>
+    </section>
+    <button id="btnboton"><img src="./img/menuicon.png" alt="" width="40px"></button>
+    <section class="herramientas" id="desplegable">
+
+        <div>
+            <Input type="number" placeholder="ID del producto" class="paraInputs" required></Input>
+            <Input type="number" placeholder="Cantidad de productos" class="paraInputs" required></Input>
+            <button class="boton"> Agregar a la factura</button>
+            <button class="boton"> Generar la factura</button>
+            <button class="boton">Limpiar factura</button>
+            <a href="./newProduct.html" class="boton">Agregar producto</a>
+        </div>
+    </section>
+    <section id="factura">
+        
+    </section>
+  <!--  <section>
+        <h2>Factura previsualización</h2>
+        <table>
+            <tr>
+                <td>Cantidad</td>
+                <td>Producto</td>
+                <td>Descripción</td>
+                <td>Precio unitario</td>
+                <td>Precio total</td>
+            </tr>
+        </table>
+    </section>  -->
+    <script src="./js/inicioScript.js"></script>
+</body>
+</html>
